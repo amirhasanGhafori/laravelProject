@@ -16,6 +16,4 @@ class Answers extends Model
     public function thread(){
         return $this->belongsTo(Thread::class);
     }
-
-
 }

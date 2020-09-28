@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d3407b-ba9b-42a8-be64-2e9ab05de416" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +165,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1601229172679">
