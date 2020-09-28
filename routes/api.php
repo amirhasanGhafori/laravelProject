@@ -25,3 +25,12 @@ Route::prefix('/V1/auth')->group(function (){
     Route::post('login','API/V01/Auth/AuthController@login')->name('auth.login');
 
 });
+
+
+//channel routs
+
+Route::prefix('channel')->group(function (){
+
+    Route::get('/all','API/V01/Channel/ChannelController@getAllChannelLists')->name('channel.all');
+
+});
