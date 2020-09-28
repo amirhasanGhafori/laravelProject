@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 20;
+});
+
+
+Route::get('/channels',function (){
+    return 12;
 });
 
 Route::get('/show',function (){
