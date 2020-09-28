@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d3407b-ba9b-42a8-be64-2e9ab05de416" name="Default Changelist" comment="" />
+    <list default="true" id="f2d3407b-ba9b-42a8-be64-2e9ab05de416" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Auth/AuthControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Laracats.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laracats.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_27_150556_create_threads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_27_150556_create_threads_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +35,34 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1601282465" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="production" />
+                    <option name="lastUsedInstant" value="1601282464" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -131,6 +174,7 @@
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1i64JvNeqOcxBblKRUdR06xV4K3" />
@@ -141,6 +185,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -174,9 +219,34 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601287433721">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601287433721" />
+    <state x="573" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601286961296">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="573" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1601286961296" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601293358909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601293358909" />
+    <state x="577" y="180" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1601293219215">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="577" y="180" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1536.824@0.0.1536.824" timestamp="1601293219215" />
     <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1601229172679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -193,9 +263,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601229172679" />
+    <state x="556" y="119" key="NewPhpClassDialog" timestamp="1601293326404">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="556" y="119" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1601293326404" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1601277659433">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601277659433" />
+    <state x="492" y="205" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1601287856188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="492" y="205" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1601287856188" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601292903941">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601292903941" />
   </component>
 </project>
