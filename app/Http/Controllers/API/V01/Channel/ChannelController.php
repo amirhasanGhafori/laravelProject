@@ -12,7 +12,9 @@ use Illuminate\Support\Str;
 class ChannelController extends Controller
 {
     public function getAllChannelLists(){
+
         return response()->json(Channel::all(),200);
+
     }
 
 
@@ -43,9 +45,19 @@ class ChannelController extends Controller
 
     }
 
-    /**
-     * @param Request $request
-     */
 
+    public function deleteChannel(Request $request){
+        $request->validate([
+            'id'=>['required']
+        ]);
+
+
+        Channel::destroy($request->id);
+
+        \response()->json([
+           'message'=>'Channel Destroy Successfully'
+        ],Response::HTTP_OK);
+
+    }
 
 }

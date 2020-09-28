@@ -16,7 +16,10 @@
     <list default="true" id="f2d3407b-ba9b-42a8-be64-2e9ab05de416" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/V01/Channel/ChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/V01/Channel/ChannelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ChannelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ChannelRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Auth/AuthControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Auth/AuthControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Channel/ChannelControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Channel/ChannelControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
