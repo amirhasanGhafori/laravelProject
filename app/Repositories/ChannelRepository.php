@@ -21,4 +21,12 @@ class ChannelRepository
             'slug'=>Str::slug($request->name)
         ]);
     }
+
+    public function update(Request $request): void
+    {
+        Channel::find($request->id)->update([
+            'name' => $request->name,
+            'slug' => Str::slug($request->name)
+        ]);
+    }
 }

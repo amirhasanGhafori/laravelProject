@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Channel;
 use App\Repositories\ChannelRepository;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Str;
 
 class ChannelController extends Controller
 {
@@ -26,5 +28,24 @@ class ChannelController extends Controller
         ],201);
 
     }
+
+
+    public function editChannel(Request $request){
+        $request->validate([
+            'name'=>['required']
+        ]);
+
+        resolve(ChannelRepository::class)->update($request);
+
+        return response()->json([
+            'message'=>'channel edited successfully'
+        ],Response::HTTP_OK);
+
+    }
+
+    /**
+     * @param Request $request
+     */
+
 
 }
