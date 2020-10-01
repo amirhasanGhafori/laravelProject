@@ -22,6 +22,15 @@ Route::prefix('v01/auth/')->group(function (){
     Route::post('logout','App\Http\Controllers\API\V01\Auth\AuthController@logout')->name('user.logout');
     Route::get('/user','App\Http\Controllers\API\V01\Auth\AuthController@user')->name('user.show');
 
+});
+
+
+//Route Channels
+
+Route::prefix('v01/channel/')->group(function (){
+
+    Route::get('/channel','App\Http\Controllers\API\V01\Channel\ChannelController@getAllChannel')->name('channel.show');
+    Route::post('/create','App\Http\Controllers\API\V01\Channel\ChannelController@createNewChannel')->name('channel.create');
 
 });
 
