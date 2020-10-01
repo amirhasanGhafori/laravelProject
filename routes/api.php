@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\V01\Channel\ChannelController;
+use App\Http\Controllers\API\V01\Auth\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,22 +17,60 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::prefix('v01/auth/')->group(function (){
+Route::prefix('v01')->group(function (){
+    Route::prefix('auth/')->group(function (){
 
-    Route::post('register','App\Http\Controllers\API\V01\Auth\AuthController@register')->name('user.register');
-    Route::post('login','App\Http\Controllers\API\V01\Auth\AuthController@login')->name('user.login');
-    Route::post('logout','App\Http\Controllers\API\V01\Auth\AuthController@logout')->name('user.logout');
-    Route::get('/user','App\Http\Controllers\API\V01\Auth\AuthController@user')->name('user.show');
+        Route::post('register',[
+            AuthController::class,
+            'register'
+        ])->name('user.register');
+
+        Route::post('login',[
+            AuthController::class,
+            'login'
+        ])->name('user.login');
+
+        Route::post('logout',[
+            AuthController::class,
+            'logout'
+        ])->name('user.logout');
+
+        Route::get('/user',[
+            AuthController::class,
+            'user'
+        ])->name('user.show');
+
+    });
+
+
+    Route::prefix('channel/')->middleware('can:channel management')->group(function (){
+
+        Route::get('/channel',[
+            ChannelController::class,
+            'getAllChannel'
+        ])->name('channel.show');
+
+        Route::post('/create',[
+            ChannelController::class,
+            'createNewChannel'
+        ])->name('channel.create');
+
+        Route::post('/edit',[
+            ChannelController::class,
+            'editChannel'
+        ])->name('channel.edit');
+
+        Route::delete('/delete',[
+            ChannelController::class,
+            'deleteChannel'
+        ])->name('channel.delete');
+
+    });
+
 
 });
 
 
 //Route Channels
 
-Route::prefix('v01/channel/')->group(function (){
-
-    Route::get('/channel','App\Http\Controllers\API\V01\Channel\ChannelController@getAllChannel')->name('channel.show');
-    Route::post('/create','App\Http\Controllers\API\V01\Channel\ChannelController@createNewChannel')->name('channel.create');
-
-});
 

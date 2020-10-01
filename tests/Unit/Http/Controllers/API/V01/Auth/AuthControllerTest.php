@@ -7,6 +7,8 @@ use http\Client\Curl\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 use Tests\TestCase;
 
 class AuthControllerTest extends TestCase
@@ -15,8 +17,35 @@ class AuthControllerTest extends TestCase
     use RefreshDatabase;
     //test register
 
+
+    public function registerRoleAndPermission()
+    {
+        $roleInDatabase = Role::where('name',config('permission.default_rules')[0]);
+        if ($roleInDatabase)
+        {
+            foreach (config('permission.default_rules') as $role){
+                Role::create([
+                    'name'=>$role
+                ]);
+            }//foreach
+        }//if
+
+
+        $permissionInDatabase = Permission::where('name',config('permission.default_permission')[0]);
+        if ($permissionInDatabase)
+        {
+            foreach (config('permission.default_permission') as $permission){
+                Permission::create([
+                    'name'=>$permission
+                ]);
+            }
+        }//if
+    }
+
     public function testRegister()
     {
+
+        $this->registerRoleAndPermission();
         $response = $this->postJson(route('user.register'),[
             'name'=>'amirhasan11a',
             'email'=>'amirhasan1a@gmail.com',

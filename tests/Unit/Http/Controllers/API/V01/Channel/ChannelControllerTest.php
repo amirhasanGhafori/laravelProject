@@ -26,4 +26,27 @@ class ChannelControllerTest extends TestCase
 
     }
 
+
+    public function test_edit_channel()
+    {
+        $response = $this->postJson(route('channel.edit'),[
+            'id'=>1,
+            'name'=>'Sass'
+        ]);
+
+        $response->assertStatus(Response::HTTP_OK);
+
+    }
+
+    public function test_delete_channel(){
+
+        $response = $this->deleteJson(route('channel.delete'),[
+            'id'=>1
+        ]);
+
+        $response->assertStatus(Response::HTTP_OK);
+
+    }
+
+
 }

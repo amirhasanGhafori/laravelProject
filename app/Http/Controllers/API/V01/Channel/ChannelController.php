@@ -29,4 +29,29 @@ class ChannelController extends Controller
 
     }
 
+
+    public function editChannel(Request $request)
+    {
+        $request->validate([
+            'name'=>['required']
+        ]);
+
+        //update channel
+        resolve(ChannelRepository::class)->update($request);
+
+        return \response()->json([
+            'message'=>'updated successfully'
+        ],Response::HTTP_OK);
+
+    }
+
+    public function deleteChannel(Request $request)
+    {
+        Channel::destroy($request->id);
+
+        return \response()->json([
+            'message'=>'deleted channel successfully'
+        ],Response::HTTP_OK);
+    }
+
 }
