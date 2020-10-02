@@ -14,22 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beb0b8cb-6668-4b2b-80a1-815eef2a09ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/v1/auth_routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laracats.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laracats.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/V01/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/V01/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/V01/Channel/ChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/V01/Channel/ChannelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ChannelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ChannelRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_121934_create_threads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_29_121934_create_threads_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/RuleFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/RuleFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Auth/AuthControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Auth/AuthControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Channel/ChannelControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Http/Controllers/API/V01/Channel/ChannelControllerTest.php" afterDir="false" />
@@ -210,7 +201,8 @@
       <workItem from="1601445022816" duration="8217000" />
       <workItem from="1601487210901" duration="594000" />
       <workItem from="1601543376068" duration="9229000" />
-      <workItem from="1601565441330" duration="5134000" />
+      <workItem from="1601565441330" duration="8973000" />
+      <workItem from="1601618449171" duration="13787000" />
     </task>
     <servers />
   </component>
@@ -234,10 +226,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="512" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601555005790" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601572806644">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601575658822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601572806644" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601575658822" />
     <state x="577" y="180" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1601546219638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -274,9 +266,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="492" y="205" width="570" height="423" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1601455625266" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601555916754">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601636142682">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601555916754" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601636142682" />
   </component>
 </project>

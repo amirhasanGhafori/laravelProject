@@ -43,31 +43,31 @@ Route::prefix('v01')->group(function (){
     });
 
 
-    Route::prefix('channel/')->middleware('can:channel management')->group(function (){
+    Route::prefix('channel/')->group(function (){
 
         Route::get('/channel',[
             ChannelController::class,
             'getAllChannel'
         ])->name('channel.show');
 
-        Route::post('/create',[
-            ChannelController::class,
-            'createNewChannel'
-        ])->name('channel.create');
+        Route::middleware(['can:channel management','can:user management','auth:sanctum'])->group(function (){
+            Route::post('/create',[
+                ChannelController::class,
+                'createNewChannel'
+            ])->name('channel.create');
 
-        Route::post('/edit',[
-            ChannelController::class,
-            'editChannel'
-        ])->name('channel.edit');
+            Route::post('/edit',[
+                ChannelController::class,
+                'editChannel'
+            ])->name('channel.edit');
 
-        Route::delete('/delete',[
-            ChannelController::class,
-            'deleteChannel'
-        ])->name('channel.delete');
+            Route::delete('/delete',[
+                ChannelController::class,
+                'deleteChannel'
+            ])->name('channel.delete');
 
+        });
     });
-
-
 });
 
 

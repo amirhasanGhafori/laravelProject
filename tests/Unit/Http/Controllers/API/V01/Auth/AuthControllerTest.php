@@ -47,9 +47,9 @@ class AuthControllerTest extends TestCase
 
         $this->registerRoleAndPermission();
         $response = $this->postJson(route('user.register'),[
-            'name'=>'amirhasan11a',
-            'email'=>'amirhasan1a@gmail.com',
-            'password'=>13771120
+            'name'=>'amirhasan',
+            'email'=>'amirhasandidloo@gmail.com',
+            'password'=>"13771120"
         ]);
         $response->assertStatus(Response::HTTP_OK);
 

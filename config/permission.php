@@ -141,7 +141,7 @@ return [
         'store' => 'default',
     ],
 
-    'default_super_admin_email'=>['amirhasandidloo@gmail.com'],
+    'default_super_admin_email'=>'amirhasandidloo@gmail.com',
     'default_rules'=>[
         'Super Admin',
         'User'
