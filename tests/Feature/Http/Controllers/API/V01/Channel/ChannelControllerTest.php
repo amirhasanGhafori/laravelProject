@@ -83,10 +83,7 @@ class ChannelControllerTest extends TestCase
         $response = $this->deleteJson(route('channel.delete'),[
             'id'=>1
         ]);
-
         $response->assertStatus(Response::HTTP_OK);
-
     }
-
 
 }

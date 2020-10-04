@@ -68,6 +68,9 @@ Route::prefix('v01')->group(function (){
 
         });
     });
+
+    Route::resource('threads',\App\Http\Controllers\API\V01\Thread\ThreadController::class);
+
 });
 
 
