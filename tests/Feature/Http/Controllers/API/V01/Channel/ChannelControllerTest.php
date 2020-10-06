@@ -77,13 +77,15 @@ class ChannelControllerTest extends TestCase
     public function test_delete_channel(){
 
         $user = User::factory()->create();
+        $channel = Channel::factory()->create();
         Sanctum::actingAs($user);
         $user->givePermissionTo('channel management','user management');
 
         $response = $this->deleteJson(route('channel.delete'),[
-            'id'=>1
+            'id'=>$channel->id
         ]);
         $response->assertStatus(Response::HTTP_OK);
+        $this->assertTrue(Channel::where('id',$channel->id)->count() == 0);
     }
 
 }
